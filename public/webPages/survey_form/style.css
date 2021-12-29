@@ -1,0 +1,72 @@
+body{
+  background: linear-gradient(45deg, rgb(99, 64, 255), rgb(189, 47, 255));
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#title{
+  display: block;
+  margin-bottom: 0;
+}
+
+form{
+  font-size: 1.2em;
+  background: linear-gradient(rgb(253, 113, 155), transparent);
+  background-color: rgb(83, 155, 238);
+  width: 60%;
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+  padding: 5%;
+  border-style:groove;
+  border-radius: 2%;
+}
+
+.required{
+  color:red;
+}
+
+.heading
+{
+  display: block;
+  margin: 0 0 1%;
+}
+
+.text-input{
+  display: block;
+  width: 100%;
+}
+
+.input{
+  margin-bottom: 3%;
+  border:2px solid rgb(129, 95, 255) ;
+  padding: 0.2rem 0;
+  border-radius: 5px;
+}
+
+#dropdown{
+  display: block;
+  width: 50%;
+}
+
+.radio-checkbox{
+  margin-bottom: 3%;
+}
+
+::placeholder{
+  font-style: italic;
+}
+
+#submit{
+  display: block;
+  margin: 0.2rem auto;
+  text-transform:uppercase;
+  background-color: rgb(63, 63, 190);
+  color: aliceblue;
+  border-radius:3px ;
+}
+
+#submit:hover{
+  background-color: rgb(116, 234, 255);
+  color:black ;
+}

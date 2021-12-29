@@ -1,0 +1,118 @@
+html {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 253, 244);
+}
+
+#navbar {
+  font-size: 1.8rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 310px;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 2px solid black;
+}
+
+#navbar header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 25px 0;
+  border-bottom: 1px solid black;
+}
+
+#navbar ul {
+  position: relative;
+  list-style-position: inside;
+  list-style-type: disc;
+  padding: 0 10px;
+}
+
+#navbar li {
+  padding: 15px 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(22, 24, 129);
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+main {
+  position: absolute;
+  right: 2vw;
+  top: 0;
+  left: 330px;
+  font-size: 1.5rem;
+  width: auto;
+}
+
+.main-section {
+  margin-bottom: 45px;
+}
+
+.main-section header {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+code {
+  background-color: rgb(231, 231, 228);
+  display: block;
+  white-space: pre-line;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  padding: 15px;
+}
+
+@media (max-width: 955px) {
+
+  #navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    border-bottom: 5px solid black;
+    border-right: none;
+    font-size: 1.5rem;
+    z-index: 1;
+  }
+
+  #navbar header {
+    padding: 5px;
+  }
+
+  #navbar ul {
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #navbar ul li {
+    padding: 5px;
+    border-top: 1px dashed black;
+  }
+
+  #navbar #top-item {
+    border-top: none;
+  }
+
+  main {
+    position: absolute;
+    right: 10px;
+    top: 160px;
+    left: 10px;
+    font-size: 1.5rem;
+    width: auto;
+  }
+}

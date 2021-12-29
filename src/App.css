@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=PT+Sans+Narrow&display=swap");
+
+:root {
+  --clr-dark: #000033;
+  --clr-light: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(images/background_texture.jfif);
+}
+
+.introduction {
+  font-family: "kaushan script", sans-serif;
+  color: var(--clr-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 40em;
+}
+
+.greeting {
+  font-size: 10em;
+}
+
+.title {
+  font-size: 3em;
+}
+
+.subtitle {
+  font-size: 2.5em;
+  text-decoration: underline;
+  text-underline-offset: 0.1em;
+}
+
+@media (min-width: 40em) {
+  .greeting {
+    font-size: 15em;
+  }
+
+  .title {
+    font-size: 4em;
+  }
+
+  .subtitle {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 80em) {
+  .greeting {
+    font-size: 20em;
+  }
+
+  .title {
+    font-size: 5em;
+  }
+
+  .subtitle {
+    font-size: 3em;
+  }
+}
+
+.projects-btn {
+  background-color: rgba(56, 56, 56, 0.1);
+  color: var(--clr-dark);
+  font-family: "PT Sans Narrow", "sans-serif";
+  font-size: 2em;
+  margin-top: 50%;
+  padding: 0.8em;
+  border: 1px solid var(--clr-dark);
+  border-radius: 15px;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.projects-btn:hover {
+  cursor: pointer;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+.arrow {
+  font-size: inherit;
+  margin-left: 0.8rem;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 4rem;
+}
+
+.project {
+  background-color: #000;
+  color: var(--clr-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 30rem;
+  height: 34rem;
+  overflow: hidden;
+  margin: 3rem;
+}
+
+.project-header {
+  background-color: var(--clr-dark);
+  width: inherit;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.project-title {
+  font-family: "PT Sans Narrow", "sans-serif";
+  font-size: 2em;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.project img {
+  width: inherit;
+  width: 30rem;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  transition: transform 0.4s, opacity 0.4s;
+  object-fit: fill;
+}
+
+.project:hover {
+  cursor: pointer;
+}
+
+.webpage-message {
+  font-size: 1.6rem;
+  opacity: 0;
+  position: absolute;
+  align-self: center;
+  color: var(--clr-light);
+  border: 1px solid var(--clr-light);
+  border-radius: 2rem;
+  padding: 1rem;
+  transition: opacity 0.4s;
+}
+
+a {
+  text-decoration: none;
+}

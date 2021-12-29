@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html{
+  scroll-padding-top: 90px;
+  font-family: 'Arvo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+}
+
+body{
+  background-color: rgb(255, 241, 45);
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+header{
+  background-color: rgb(250, 244, 154);
+  font-style: italic;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#header-img{
+  height: 150%;
+  margin-left: 80px;
+}
+
+#nav-list {
+  display: flex;
+  margin-right: 80px;
+}
+
+#nav-list > li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link:hover {
+  color: grey;
+}
+
+main{
+  max-width: 900px;
+  margin: 90px auto 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+#heading{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+#features {
+  text-align: left;
+  margin-bottom: 80px;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+}
+
+.desc {
+  margin: 0 5% 50px;  
+}
+
+.desc h2 {
+  text-transform: uppercase;
+}
+
+.icon {
+  font-size: 3em;
+  padding: 30px 0;
+  margin-left:20px;
+  margin-bottom: 50px;
+  height: 60px;
+  color: purple;
+}
+
+.icon-3{
+  font-size: 2.6em;
+  padding-top: 40px;
+}
+
+#motivational-video{
+  padding: 0 100px 100px;
+
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0px;
+}
+
+#video{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+#plans h2{
+  text-transform: uppercase;
+}
+
+.plans-class {
+  background-color: rgb(250, 244, 154);
+  border: 2px solid black;
+  margin: 30px;
+}
+
+.plans-class h3 {
+  background-color: rgb(250, 244, 154);
+  text-transform: uppercase;
+  margin: 0;
+  height: 50px;
+  padding: 25px 15px 0;
+}
+
+.plans-class p {
+  background-color: rgb(248, 243, 174);
+  margin: 0;
+  height: 25px;
+  padding-top: 12.5px;
+  font-style: italic;
+  border-top: 1px dashed black;
+  border-bottom: 1px dashed black;
+}
+
+.plans-class ul {
+  text-align: left;
+  padding-right: 20px;
+}
+
+.plan-btn {
+  background-color: rgb(255, 217, 255);
+  margin-bottom: 20px;
+  width: 80px;
+  height: 30px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.plan-btn:hover {
+  cursor: pointer;
+  background-color: purple;
+  color: white;
+}
+
+form {
+  margin: 50px 0 100px;
+}
+
+fieldset {
+  width: 300px;
+  margin: auto;
+  border: 3px solid black;
+}
+
+#email {
+  background-color: rgb(250, 244, 154);
+  display: block;
+  margin: 15px auto;
+  text-align: center;
+  width: 75%;
+  height: 20px;
+  border: 2px solid black;
+}
+
+#submit {
+  background-color: rgb(255, 217, 255);
+  margin: 7px 0 15px;
+  width: 80px;
+  height: 30px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: purple;
+  color: white;
+}
+
+footer{
+  background-color: rgb(196, 196, 196);
+  height: 70px;
+  margin: 0 -8px;
+  position: relative;
+  text-align: right;
+  margin-bottom: -15px;
+}
+
+.foot {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.foot p {
+  margin: auto;
+  padding: 5px;
+}
+
+@media(max-width: 855px){
+  .grid {
+    flex-direction: column;
+  }
+
+  .desc h2 {
+    text-align: center;
+  }
+
+  .icon {
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    height: 0;
+  }
+}
+
+@media(max-width: 700px){
+  #nav-list {
+    flex-direction: column;
+  }
+
+  #nav-list li {
+    margin-bottom: 7px;
+  }
+}

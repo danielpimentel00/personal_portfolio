@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 id="title">Programming Survey Form</h1>
+    <p id="description">Thank you for taking the time to fill out this form</p>
+    <form id="survey-form" action="">
+      <div>
+        <label id="name-label" for="name" class="heading"
+          >Name<span class="required">*</span></label
+        >
+        <input
+          type="text"
+          id="name"
+          class="text-input input"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div>
+        <label id="email-label" for="email" class="heading"
+          >Email<span class="required">*</span></label
+        >
+        <input
+          type="email"
+          id="email"
+          class="text-input input"
+          name="email"
+          placeholder="Enter you email address"
+          required
+        />
+      </div>
+      <div>
+        <label id="number-label" for="number" class="heading">Age</label>
+        <input
+          type="number"
+          id="number"
+          class="text-input input"
+          name="age"
+          min="5"
+          max="120"
+          placeholder="Enter your age"
+        />
+      </div>
+      <div>
+        <label for="favProgrammingLang" class="heading"
+          >What's your favorite programming language?</label
+        >
+        <select name="favProgrammingLang" id="dropdown" class="input">
+          <option value="none">None</option>
+          <option value="python">Python</option>
+          <option value="c">C</option>
+          <option value="c++">C++</option>
+          <option value="c#">C#</option>
+          <option value="java">Java</option>
+          <option value="javascript">Javascript</option>
+          <option value="php">PHP</option>
+          <option value="r">R</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="radio-checkbox">
+        <p class="heading">Best programming paradigm</p>
+        <div>
+          <label for="imperative"
+            ><input
+              type="radio"
+              name="programmingParadigm"
+              id="imperative"
+              value="imperative"
+              checked
+            />Imperative</label
+          >
+        </div>
+        <div>
+          <label for="declarative"
+            ><input
+              type="radio"
+              name="programmingParadigm"
+              id="declarative"
+              value="declarative"
+            />Declarative</label
+          >
+        </div>
+        <div>
+          <label for="function-level"
+            ><input
+              type="radio"
+              name="programmingParadigm"
+              id="function-level"
+              value="function-level"
+            />Function-level</label
+          >
+        </div>
+        <div>
+          <label for="value-level"
+            ><input
+              type="radio"
+              name="programmingParadigm"
+              id="value-levell"
+              value="value-level"
+            />Value-level</label
+          >
+        </div>
+        <div>
+          <label for="structured"
+            ><input
+              type="radio"
+              name="programmingParadigm"
+              id="structured"
+              value="structured"
+            />Structured</label
+          >
+        </div>
+        <div>
+          <label for="non-structured"
+            ><input
+              type="radio"
+              name="programmingParadigm"
+              id="non-structured"
+              value="non-structured"
+            />Non-structured</label
+          >
+        </div>
+      </div>
+      <div class="radio-checkbox">
+        <p class="heading">What concepts do you know?</p>
+        <div>
+          <label for="variables"
+            ><input
+              type="checkbox"
+              id="variables"
+              name="programmingConcepts"
+              value="variables"
+            />Variables</label
+          >
+        </div>
+        <div>
+          <label for="conditionals"
+            ><input
+              type="checkbox"
+              id="conditionals"
+              name="programmingConcepts"
+              value="conditionals"
+            />Conditionals</label
+          >
+        </div>
+        <div>
+          <label for="loops"
+            ><input
+              type="checkbox"
+              id="loops"
+              name="programmingConcepts"
+              value="loops"
+            />Loops</label
+          >
+        </div>
+        <div>
+          <label for="functions"
+            ><input
+              type="checkbox"
+              id="functions"
+              name="programmingConcepts"
+              value="functions"
+            />Functions</label
+          >
+        </div>
+        <div>
+          <label for="pointers"
+            ><input
+              type="checkbox"
+              id="pointers"
+              name="programmingConcepts"
+              value="pointers"
+            />Pointers</label
+          >
+        </div>
+        <div>
+          <label for="recursion"
+            ><input
+              type="checkbox"
+              id="recursion"
+              name="programmingConcepts"
+              value="recursion"
+            />Recursion</label
+          >
+        </div>
+        <div>
+          <label for="dataStructures"
+            ><input
+              type="checkbox"
+              id="dataStructures"
+              name="programmingConcepts"
+              value="dataStructures"
+            />Data Structures</label
+          >
+        </div>
+        <div>
+          <label for="classes-objects"
+            ><input
+              type="checkbox"
+              id="classes-objects"
+              name="programmingConcepts"
+              value="classes-objects"
+            />Classes and Objects</label
+          >
+        </div>
+      </div>
+      <div>
+        <label for="comment" class="heading"
+          >Do you like programming? Why?<span class="required">*</span></label
+        >
+        <textarea
+          name="comment"
+          id="comment"
+          class="text-input input"
+          rows="8"
+          required
+        ></textarea>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
