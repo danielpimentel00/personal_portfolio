@@ -4,7 +4,7 @@ import "../css/all.css";
 export default function Introduction() {
   return (
     <div className="introduction">
-      <h1 className="greeting">Hi!</h1>
+      <h1 className="greeting">Welcome</h1>
       <h2 className="title">I'm Daniel Pimentel</h2>
       <h3 className="subtitle">a web developer</h3>
       <a href="#projects-container">
