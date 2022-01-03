@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Project from "./Project";
 import stocks_tracker from "../images/stocks_tracker.png";
-import juego_de_azar from "../images/juego_de_azar.png";
+import lucky_choice_game from "../images/lucky_choice_game.png";
 import product_landing_page from "../images/product_landing_page.png";
 import documentation_page from "../images/documentation_page.png";
 import survey_form from "../images/survey_form.png";
@@ -14,9 +14,9 @@ export default function Projects() {
       path: "/webPages/Stocks_Tracker/index.html",
     },
     {
-      title: "Juego de Azar",
-      image: juego_de_azar,
-      path: "/webPages/Juego_de_azar/index.html",
+      title: "Lucky Choice Game",
+      image: lucky_choice_game,
+      path: "/webPages/Lucky_choice_game/index.html",
     },
     {
       title: "Product Landing Page",
