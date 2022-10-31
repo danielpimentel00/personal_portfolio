@@ -5,7 +5,7 @@ import Projects from "./components/Projects";
 function App() {
   return (
     <div className="App">
-      <Introduction onProjectsClick={"#projects-container"} />
+      <Introduction />
       <Projects />
     </div>
   );
